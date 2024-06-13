@@ -1,0 +1,440 @@
+body{
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+
+
+.centro{
+  text-align: center;
+}
+
+#logo{
+  width: 50px;
+  margin:0px;
+  padding: 0px;
+}
+
+
+footer{
+  display: block;
+  color: #fff;
+  background: #373737;
+  padding: auto;
+  width:100%;
+  height: 60px;
+  bottom: 0;
+}
+
+#conteudo1{
+  clear:auto ;
+  width: 100%;
+  height: 780px;
+  background: #fff;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+#conteudo2 {
+  clear:auto;
+  width: 100%;
+  height: 780px;
+  background: #000;
+  padding: 30px;
+  color: #fff;
+}
+
+#conteudo3{
+  clear:auto ;
+  width: 100%;
+  height: 690px;
+  background: #fff;
+  padding: 30px;
+}
+
+
+.jogo{
+  width: 100%;
+  height: 300px;
+  background: #ccc;
+}
+.fundo{
+  background:#000;
+  width: 100%;
+  height: 780px;
+  
+}
+
+#usina{
+  width: 320px;
+  margin: auto;
+}
+
+
+/*game 2 início*/
+
+#fissao_atomica h3{
+  background: black;
+  border-radius:5px;
+  color: #003E9B;
+  width:200px;
+  margin: auto;
+  padding: 5px ;
+}
+
+#fissao_atomica{
+  overflow: auto;
+  width: 350px;
+  margin:12px;
+  padding: 4px;
+  text-align:center;
+  background:#000;
+  color: #003E9B;
+  border-radius: 30px;
+  box-shadow:9px 9px 9px #003E9B;
+}
+
+
+#jogo{
+  width:100%;
+  height:260px;
+  background: #000;
+  position: relative;
+}
+
+.neutron1{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left:147.5px;
+  bottom: 136px;
+  border-radius: 24px;
+  background-size:24px;
+}
+
+neu2{
+  background:none;
+}
+
+
+.atomo{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image:url(nêutron.png);
+  bottom: 135px;
+  border-radius: 30px;
+  background-size:30px;
+}
+
+
+.atomo1{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left:130px;
+  bottom: 105px;
+  border-radius: 100px;
+  background-image:url(núcleo.png);
+  background-size:100px;
+}
+.atomo2{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-image:url(núcleo.png);
+  left: 130px;
+  bottom: 105px;
+  background-size:100px;
+}
+
+.energia{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  left: 130px;
+  bottom: 105px;
+}
+
+.neu{
+  background-image:url(nêutron.png);
+  animation: neutron_animaçao 3s linear;
+}
+
+.parar{
+  background:none;
+}
+.andar{
+  animation: atomo-animacao 9s linear;
+}
+
+.andar1{
+  animation: atomo1-animacao 3s linear;
+}
+
+.andar2{
+  animation: atomo2-animacao 3s linear;
+}
+.explosao{
+  animation: energia 3s linear;
+}
+
+#iniciar{
+  width:50px;
+  height: 50px;
+  border-radius:50px;
+  border: none;
+  box-shadow: 4px 1.5px #A60000;
+  background-color:#FF2525;
+  color: #003E9B;
+}
+
+
+
+@keyframes atomo-animacao{
+  0%{
+    left: 0;
+  }
+  
+  80% {
+    left:275px;
+    background:none;
+  }
+  
+  90% {
+    left: 275px;
+    background: none;
+  }
+  
+  100% {
+    left:275px;
+    background:none;
+  }
+}
+
+@keyframes atomo1-animacao{
+  
+  0%{
+    left:130px;
+    bottom: 125px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-size:50px;
+    
+  }
+  
+80%{
+    left:240px;
+    bottom: 245px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-size:50px;
+  }
+
+90% {
+  left: 240px;
+  bottom: 245px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-size:50px;
+}
+
+  100%{
+    left:240px;
+    bottom: 245px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-size:50px;
+  }
+}
+
+@keyframes atomo2-animacao{
+  
+  0%{
+    left:130px;
+    bottom: 125px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-size:50px;
+  }
+  
+  80%{
+    left:240px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-size:50px;
+  }
+  
+  90% {
+    left: 240px;
+    bottom:  0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-size:50px;
+  }
+  
+  100%{
+    left:240px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-size:50px;
+  }
+}
+
+
+
+
+@keyframes energia{
+  0%{
+    background: none;
+    
+  }
+  50%{
+    left: 78px;
+    bottom: 60px;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    filter: blur(60px);
+  }
+  100%{
+    background:none;
+  }
+}
+
+@keyframes neutron_animaçao{
+  0%{
+    left: 130px;
+    bottom: 135px;
+    background-image:url(nêutron.png);
+  }
+
+  100%{
+    background-image:url(nêutron.png);
+    left:383px;
+    bottom: 135px;
+  }
+}
+
+/*game 2 fim*/
+
+/* game 1 inicio */
+montagem_atomo h3 {
+    background: black;
+    border-radius: 5px;
+    color: #003E9B;
+    width: 200px;
+    margin: auto;
+    padding: 5px;
+}
+
+#montagem_atomo {
+    overflow: auto;
+    width: 350px;
+    margin: 12px;
+    padding: 4px;
+    text-align: center;
+    background: #000;
+    color: #003E9B;
+    border-radius: 30px;
+    box-shadow: 9px 9px 9px #003E9B;
+}
+
+#atom-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.drop-zone {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#particles {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.particle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.proton {
+    background-image: url(prótron.png);
+    background-size: 30px;
+}
+
+.neutron {
+    background-image: url(nêutron.png);
+    background-size: 30px;
+}
+
+.electron {
+    background-image: url(eletron.png);
+    background-size: 30px;
+}
+
+#orbita {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 160px;
+    border: solid 3px skyblue;
+}
+
+#nucleu {
+    border-radius: 110px;
+    width: 110px;
+    height: 110px;
+    border: solid 3px red;
+}
+
+.success {
+    animation: successEffect 4s  alternate;
+}
+
+@keyframes successEffect {
+    0%{
+    background: none;
+    
+  }
+  50%{
+    left: 78px;
+    bottom: 60px;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    filter: blur(60px);
+  }
+  100%{
+    background:none;
+  }
+}
+/* game 1 fim */
